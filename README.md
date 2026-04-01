@@ -22,20 +22,24 @@ Volition cannot be directly observed. Instead, we infer it through constrained b
 
 ---
 
-## III. The Structural Friction Model
+## III. The Structural Friction Model (SFM)
 Unlike static Social Determinants of Health (SDOH) models, the **Structural Friction Model** mechanistically quantifies the dynamic *cost* of navigating environmental conditions.
 
-We operationalize behavioral capacity as a dynamic probability $P(\text{adherence})$ using a logistic model with an interaction term:
+### 3.1 The Moderated Probability Model
+We operationalize behavioral capacity as a dynamic probability $P(\text{adherence})$ using a logistic model with an interaction term to account for non-linear behavioral collapse:
 
-$$P(\text{adherence}) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 V_i - \beta_2 F_s - \beta_3(V_i \times F_s))}}$$
+$$P(A)_{is} = \frac{1}{1 + e^{-(\beta_0 + \beta_1 V_i - \beta_2 F_s - \beta_3(V_i \cdot F_s))}}$$
 
-**Variable Definitions:**
-* **$\beta_0$**: Baseline log-odds of adherence.
-* **$\beta_1 V_i$**: The positive marginal effect of baseline individual volition ($V_i$).
-* **$\beta_2 F_s$**: The direct suppressive penalty of **Structural Friction**.
-* **$\beta_3(V_i \times F_s)$**: The critical interaction effect—the rate at which environmental friction modulates and suppresses the efficacy of individual agency.
+### 3.2 Defining the Weighted Friction Index
+**Structural Friction** ($F_s$) is not treated as a monolithic variable, but as a composite index of environmental barriers weighted by regional relevance ($\omega$):
 
-This methodology allows for the precise identification of **threshold conditions**. Under low friction, behavioral variance directly reflects individual volition ($V_i$). However, as friction crosses a critical threshold, the interaction effect dominates, variance compresses, and the marginal influence of individual volition becomes statistically negligible.
+$$F_s = \sum_{k=1}^{n} \omega_k C_k = (\omega_1 \cdot \text{Cost}_{\text{financial}} + \omega_2 \cdot \text{Cost}_{\text{temporal}} + \omega_3 \cdot \text{Cost}_{\text{safety}})$$
+
+### 3.3 Variable Definitions and Functional Roles
+* **$\beta_0$**: **The Baseline.** Represents the baseline log-odds of adherence in a zero-friction vacuum.
+* **$\beta_1 V_i$**: **The Intrinsic Engine.** The positive marginal effect of baseline individual volition.
+* **$\beta_2 F_s$**: **The Environmental Brake.** The direct suppressive penalty of environmental costs.
+* **$\beta_3(V_i \cdot F_s)$**: **The Critical Interaction.** The rate at which environmental friction modulates and suppresses the efficacy of individual agency. This represents the **Cognitive Exhaustion Threshold**.
 
 ---
 
@@ -56,35 +60,22 @@ The Central Valley provides an ideal testbed where systemic constraints operate 
 ## VI. Significance & Policy Implications
 Shifting the intervention locus from the individual to the environment provides a quantifiable mandate for policy reform. Educational interventions in high-friction environments are mathematically constrained from reaching optimal outcomes. High cognitive load and resource exhaustion make this limitation inevitable.
 
-Public health capital requires redirection toward structural subsidies—localized food systems, transit integration, and direct economic relief. By targeting the *cost* of adherence [7], we move past the moralization of "lifestyle choices." Public health becomes the engineering of structural support for latent human will.
+Public health capital requires massive redirection toward structural subsidies—localized food systems, transit integration, and direct economic relief. By targeting the *cost* of adherence [7], we move past the moralization of "lifestyle choices." Public health becomes the engineering of structural support for latent human will.
 
 ***
 
 ## Strictly Cited References
-1. W. S. Robinson (1950). Ecological Correlations and the Behavior of Individuals. *American Sociological Review*. https://doi.org/10.2307/2087176
-
-2. Zihao Yi, Masoud Khani, Mohammad Assadi Shalmani, Amirsajjad Taleban, Jennifer T. Fink, Robert F. Frediani, Jake Luo (2026). From food deserts to nutritional equity: exposing socioeconomic drivers of hypertension. *Journal of Nutritional Science*. https://doi.org/10.1017/jns.2025.10067
-
-3. Abba, M., Nduka, C., Anjorin, S., Mohamed, S., Agogo, E., Uthman, O. (2021). Influence of contextual socioeconomic position on hypertension risk in low- and middle-income countries: disentangling context from composition. *BMC Public Health*. https://doi.org/10.1186/s12889-021-12238-x
-
-4. Fielder, J. C.; Shi, J.; McGlade, D.; Huys, Q. J.; Steinbeis, N. (2024). Sense of control buffers against stress. *biorxiv*. https://doi.org/10.1101/2024.12.05.626945
-
-5. Valérian Chambon, Nura Sidarus, Patrick Haggard (2014). From action intentions to action effects: how does the sense of agency come about?. *Frontiers in Human Neuroscience*. https://doi.org/10.3389/fnhum.2014.00320
-
-6. Damen, T., Müller, B., van Baaren, R., Dijksterhuis, A. (2015). Re-Examining the Agentic Shift: The Sense of Agency Influences the Effectiveness of (Self)Persuasion. *PLoS ONE*. https://doi.org/10.1371/journal.pone.0128635
-
-7. Klaus Mann, Michael Möcker, Joachim Grosser (2019). Adherence to long-term prophylactic treatment: microeconomic analysis of patients’ behavior and the impact of financial incentives. *Health Economics Review*. https://doi.org/10.1186/s13561-019-0222-1
-
-8. Emilie A. Caspar, Frederike Beyer, Axel Cleeremans, Patrick Haggard (2021). The obedient mind and the volitional brain: A neural basis for preserved sense of agency and sense of responsibility under coercion. *PLoS ONE*. https://doi.org/10.1371/journal.pone.0258884
-
-9. Irene Valori, Laura Carnevali, Giulia Mantovani, Teresa Farroni (2022). Motivation from Agency and Reward in Typical Development and Autism: Narrative Review of Behavioral and Neural Evidence. *Brain Sciences*. https://doi.org/10.3390/brainsci12101411
-
-10. Marika Mariano, Nicole Kuster, Matilde Tartufoli, Laura Zapparoli (2024). How aging shapes our sense of agency. *Psychonomic Bulletin & Review*. https://doi.org/10.3758/s13423-023-02449-1
-
-11. Kelsey Perrykkad, Rebecca P. Lawson, Sharna Jamadar, Jakob Hohwy (2021). The effect of uncertainty on prediction error in the action perception loop. *Cognition*. https://doi.org/10.1016/j.cognition.2021.104598
-
-12. Imaizumi, S.; Tanno, Y.; Imamizu, H. (2018). Compress global, dilate local: Intentional binding in action-outcome alternations. *biorxiv*. https://doi.org/10.1101/507582
-
-13. Takumi Tanaka (2024). Evaluating the Bayesian causal inference model of intentional binding through computational modeling. *Scientific Reports*. https://doi.org/10.1038/s41598-024-53071-7
-
-14. Leah L Zullig, Dan V Blalock, Samantha Dougherty, Rochelle Henderson, Carolyn C Ha, Megan M Oakes, Hayden B Bosworth (2018). The new landscape of medication adherence improvement: where population health science meets precision medicine. *Patient preference and adherence*. https://doi.org/10.2147/PPA.S165404
+1. Robinson, W. S. (1950). Ecological Correlations and the Behavior of Individuals. *American Sociological Review*.
+2. Yi, Z., et al. (2026). From food deserts to nutritional equity: exposing socioeconomic drivers of hypertension. *Journal of Nutritional Science*.
+3. Abba, M., et al. (2021). Influence of contextual socioeconomic position on hypertension risk. *BMC Public Health*.
+4. Fielder, J. C., et al. (2024). Sense of control buffers against stress. *biorxiv*.
+5. Chambon, V., et al. (2014). From action intentions to action effects. *Frontiers in Human Neuroscience*.
+6. Damen, T., et al. (2015). Re-Examining the Agentic Shift. *PLoS ONE*.
+7. Mann, K., et al. (2019). Adherence to long-term prophylactic treatment: microeconomic analysis. *Health Economics Review*.
+8. Caspar, E. A., et al. (2021). The obedient mind and the volitional brain. *PLoS ONE*.
+9. Valori, I., et al. (2022). Motivation from Agency and Reward. *Brain Sciences*.
+10. Mariano, M., et al. (2024). How aging shapes our sense of agency. *Psychonomic Bulletin & Review*.
+11. Perrykkad, K., et al. (2021). The effect of uncertainty on prediction error. *Cognition*.
+12. Imaizumi, S., et al. (2018). Compress global, dilate local: Intentional binding. *biorxiv*.
+13. Tanaka, T. (2024). Evaluating the Bayesian causal inference model of intentional binding. *Scientific Reports*.
+14. Zullig, L. L., et al. (2018). The new landscape of medication adherence improvement. *Patient preference and adherence*.
