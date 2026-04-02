@@ -13,13 +13,12 @@ The SFM serves as a **complementary mechanistic framework** to existing SDOH par
 ## II. Volition as a Latent Construct
 Cognitive science demonstrates that even under severe structural coercion, individuals often preserve a sense of agency [8]. We define **Intrinsic Capacity** ($V_i$) as the latent psychological and cognitive drive for health adherence. 
 
-
-In adverse conditions, we hypothesize that **Structural Friction** ($F_s$)—the sum of financial, temporal, and safety costs—actively exhausts the cognitive bandwidth required to execute this capacity. We posit that individual non-compliance is often a probabilistically constrained outcome of high $F_s$ [7]. In this model, volition is not "lost," but its behavioral expression is suppressed. As environmental costs rise, the probability of adherence follows a threshold-dependent function, where the environment fails to support the necessary cognitive mechanisms for action [2, 8, 11].
+In adverse conditions, we hypothesize that **Structural Friction** ($F_s$)—the sum of financial, temporal, and safety costs—actively exhausts the cognitive bandwidth required to execute this capacity. We posit that individual non-compliance is often a probabilistically constrained outcome of high $F_s$ [7]. In this model, volition is not "lost," but its behavioral expression is suppressed. As environmental costs rise, the probability of adherence follows a threshold-dependent function, where the environment imposes constraints that significantly degrade the cognitive and economic capacity required for action [2, 8, 11].
 
 ---
 
 ## III. The Moderated Probability Model (SFM)
-We operationalize behavioral capacity as a dynamic probability $P(\text{adherence})$ using a logistic model. Crucially, we include an **interaction term** to test for non-linear behavioral collapse:
+We operationalize behavioral capacity as a dynamic probability $P(\text{adherence})$ using a logistic model. Crucially, we include an **interaction term** to test for non-linear behavioral collapse. The collapse threshold is not a fixed parameter, but emerges from the interaction term $\beta_3(V_i \cdot F_s)$, where increasing $F_s$ progressively attenuates the marginal effect of $V_i$, producing a non-linear transition from agency-dominant to constraint-dominant behavior:
 
 $$P(A)_{is} = \frac{1}{1 + e^{-(\beta_0 + \beta_1 V_i - \beta_2 F_s - \beta_3(V_i \cdot F_s))}}$$
 
@@ -35,7 +34,7 @@ To ensure the SFM is operationalizable and falsifiable, we propose the following
 
 ### 4.1 Estimating Latent Intrinsic Capacity ($V_i$)
 Since $V_i$ cannot be directly observed, we propose two primary inference strategies:
-* **Revealed Preference:** Measuring adherence variance in "Low-Friction" control cohorts (where $F_s \approx 0$) to establish a baseline distribution of $V_i$.
+* **Revealed Preference:** Measuring adherence variance in comparatively low-friction cohorts (minimum observed $F_s$ within the sample) to establish a baseline distribution of $V_i$.
 * **Behavioral Rebound:** Measuring the non-linear improvement in adherence following a discrete reduction in $F_s$ (e.g., a transit subsidy). The magnitude of the rebound serves as a proxy for the previously suppressed $V_i$.
 
 ### 4.2 Quantifying Structural Friction ($F_s$)
@@ -61,7 +60,7 @@ The Central Valley serves as a critical testbed for the SFM due to its intersect
 ---
 
 ## VII. Implications for Public Health Policy
-By shifting the intervention locus from the individual to the environment, the SFM provides a quantifiable mandate for structural reform. If the model is validated, educational interventions in high-friction environments are mathematically predicted to yield diminishing returns. Capital must be redirected toward localized food systems, transit integration, and direct economic relief to bring $F_s$ below the critical collapse threshold.
+By shifting the intervention locus from the individual to the environment, the SFM provides a quantifiable mandate for structural reform. If the model is validated, educational interventions in high-friction environments are mathematically predicted to yield diminishing returns. Capital must be redirected toward localized food systems, transit integration, and direct economic relief to bring $F_s$ below the critical collapse threshold. This framework enables policymakers to treat health behavior not as a fixed trait, but as a variable response to modifiable environmental cost structures.
 
 ***
 
