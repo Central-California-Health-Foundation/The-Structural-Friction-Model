@@ -27,6 +27,8 @@ $$P(A)_{is} = \frac{1}{1 + e^{-(\beta_0 + \beta_1 V_i - \beta_2 F_s - \beta_3(V_
 * **$\beta_2 F_s$ (Environmental Brake):** The direct suppressive penalty of structural barriers.
 * **$\beta_3(V_i \cdot F_s)$ (The Exhaustion Threshold):** The interaction effect. We hypothesize that as $F_s$ increases, the marginal utility of $V_i$ decreases, representing the point of **cognitive/economic exhaustion**.
 
+<img width="813" height="647" alt="Screenshot 2026-04-02 at 9 34 22 AM" src="https://github.com/user-attachments/assets/53ddaf47-4112-4e64-a102-c1eea4dddcda" />
+
 ---
 
 ## IV. Measurement & Identification Strategy
@@ -59,6 +61,8 @@ The Central Valley serves as a critical testbed for the SFM due to its intersect
 
 While the Central Valley serves as an empirical anchor, the SFM is structurally generalizable to any environment where health behavior is mediated by measurable cost constraints.
 
+<img width="593" height="529" alt="Screenshot 2026-04-02 at 9 41 36 AM" src="https://github.com/user-attachments/assets/3604f63c-fcd2-45fb-ab85-2d17b346862e" />
+
 ---
 
 ## VII. Implications for Public Health Policy
@@ -77,6 +81,8 @@ This is the framework's most critical conceptual figure. It demonstrates that th
 
 ### 8.3 Figure 3: SFM Phase Diagram (Regions of Collapse and Agency)
 This converts the framework into a comprehensive **system map**. It is a 2D plot of $F_s$ vs. $V_i$, colored by $P(A)$. This visualization effortlessly communicates the interaction effect: it proves that in high-friction environments (right side), individuals collapse to low adherence *regardless* of their baseline capacity, defining the "Constraint-Dominant Regime." Only when friction is low (left side) can variance manifest, creating the "Agency-Dominant Regime."
+
+<img width="737" height="436" alt="Screenshot 2026-04-02 at 9 37 50 AM" src="https://github.com/user-attachments/assets/c1967a5d-1cfd-4711-9068-1a4e975952aa" />
 
 ***
 
