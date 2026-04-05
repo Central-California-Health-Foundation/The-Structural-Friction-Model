@@ -38,7 +38,7 @@ P(A)_{ij}= \frac{1}{1+\exp\!\big[-(\beta_{0}+\beta_{1}V_{i}-\beta_{2}TC_{ij}-\be
 
 Transaction costs \(TC_{ij}\) are derived from GPS‑tracked travel durations, income‑scaled fare expenditures, and crime‑rate indices within a 500‑meter transit buffer; each component undergoes hierarchical Bayesian estimation to capture spatial correlation. Cognitive bandwidth is represented implicitly through the interaction term, reflecting the diminishing returns of \(V_{i}\) as \(TC_{ij}\) escalates.
 
-![The Interaction‑Constrained Adherence Model](fig1_model.png){height=5.5in}
+<img width="813" height="647" alt="Screenshot 2026-04-02 at 9 34 22 AM" src="https://github.com/user-attachments/assets/de8fb14d-cdbe-43da-a495-7e627729f217" />
 
 ## IV. Measurement & Identification Strategy  
 
@@ -90,7 +90,7 @@ These findings confirm that the TCI functions as a sensitive predictor of physio
 
 By reorienting the locus of intervention from the individual to the environment, the Interaction‑Constrained Adherence Model furnishes a quantifiable mandate for structural reform. Validation of the model indicates that educational interventions within contexts characterized by elevated transaction costs are mathematically predicted to exhibit diminishing marginal returns. The interaction between educational input and transaction costs is captured by a negative moderation coefficient, which attenuates the marginal effect of cognitive bandwidth on adherence when transaction costs exceed the median value. Consequently, capital is recommended to be redirected toward mechanisms that reduce transaction costs, including the development of localized food systems, the integration of transit networks, and the provision of direct economic relief, with the objective of lowering the composite transaction‑cost index below the empirically identified collapse threshold. This framework treats health behavior as a variable response to modifiable environmental cost structures rather than as a fixed trait.  
 
-![Fresno Tract Cross-Section Analysis](fig2_fresno.png){height=7.5in}
+<img width="593" height="529" alt="Screenshot 2026-04-02 at 9 41 36 AM" src="https://github.com/user-attachments/assets/36b2b094-66f8-467d-9781-e616b90ef27b" />
 
 ## VIII. Supporting Visualizations for the Interaction‑Constrained Adherence Model  
 
@@ -103,7 +103,7 @@ The simulation framework is employed to illustrate the effect of a targeted poli
 ### 8.3 Interaction Phase Diagram  
 The interaction between Transaction Costs and Cognitive Bandwidth is visualized in a two‑dimensional phase diagram. Axes represent the Transaction‑Cost Index (TCI) and the latent intrinsic capacity ($V_i$). Color gradients encode the posterior mean of the adherence probability. Regions of the diagram delineate the Constraint‑Dominant Regime (high TCI, low $V_i$) and the Agency‑Dominant Regime (low TCI, high $V_i$). Empirical mapping of Fresno City tracts confirms clustering within the Constraint‑Dominant Regime for high‑TCI areas, supporting the Variance‑Suppression Hypothesis.  
 
-![Interaction Phase Diagram: Constraint‑Dominant and Agency‑Dominant Regimes](fig3_phase.png){height=3.5in}
+<img width="737" height="436" alt="Screenshot 2026-04-02 at 9 37 50 AM" src="https://github.com/user-attachments/assets/cd42acb5-ace6-4b79-a540-c643d973013b" />
 
 \newpage
 
